@@ -1,0 +1,36 @@
+/* #navbar{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 253px;
+    background-color: gold;
+} */
+header{
+    background-color: gold;
+}
+
+body{
+    background-image: url(img/ER_AltusRoadFork_GoldenSeed.png);
+}
+
+h1{
+    text-align: center;
+}
+
+
+#navbar{
+    text-align: center;
+    background-color: gold;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    color: aliceblue;
+    position: relative;
+   
+    
+}
+
+.home-pic{
+width: 100px;
+}
