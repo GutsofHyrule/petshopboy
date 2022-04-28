@@ -6,31 +6,85 @@
     background-color: gold;
 } */
 header{
-    background-color: gold;
+    background-color: #007281 !important;
 }
 
 body{
-    background-image: url(img/ER_AltusRoadFork_GoldenSeed.png);
+    background-color: #365252 !important;
 }
 
-h1{
-    text-align: center;
+a{
+    font-family: 'MedievalSharp', cursive !important;
 }
 
+
+
+p{
+    font-family: 'MedievalSharp', cursive !important;
+}
 
 #navbar{
     text-align: center;
-    background-color: gold;
+    background-color:  #6f989b !important;
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     height: auto;
     color: aliceblue;
+    position: relative;  
+}
+h1{
+text-align: center;
+font-family: 'MedievalSharp', cursive !important;
+
+}
+.footer {
     position: relative;
-   
-    
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #6f989b !important;
+    color: white;
+    text-align: center; 
+     
+  }
+
+#Alamak{
+    font-family: 'Alamak!';
+}
+
+h2{
+    font-family: 'Alamak!' !important;
+    font-family: 'MedievalSharp', cursive !important;
+
+    text-align: center;
+}
+
+a{
+    color: black;
+}
+
+.carousel-inner{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .home-pic{
 width: 100px;
+}
+
+.foot-list{
+    padding: 0px;
+}
+
+.carousel-inner{
+    border: 5px solid black;
+
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+
 }
