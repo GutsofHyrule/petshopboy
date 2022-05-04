@@ -5,40 +5,42 @@
     margin-left: 253px;
     background-color: gold;
 } */
-header{
+header {
     background-color: #007281 !important;
 }
 
-body{
+body {
     background-color: #365252 !important;
 }
 
-a{
+a {
     font-family: 'MedievalSharp', cursive !important;
 }
 
 
 
-p{
+p {
     font-family: 'MedievalSharp', cursive !important;
 }
 
-#navbar{
+#navbar {
     text-align: center;
-    background-color:  #6f989b !important;
+    background-color: #6f989b !important;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: auto;
     color: aliceblue;
-    position: relative;  
+    position: relative;
 }
-h1{
-text-align: center;
-font-family: 'MedievalSharp', cursive !important;
+
+h1 {
+    text-align: center;
+    font-family: 'MedievalSharp', cursive !important;
 
 }
+
 .footer {
     position: relative;
     left: 0;
@@ -48,43 +50,188 @@ font-family: 'MedievalSharp', cursive !important;
     height: 50px;
     background-color: #6f989b !important;
     color: white;
-    text-align: center; 
-     
-  }
+    text-align: center;
 
-#Alamak{
-    font-family: 'Alamak!';
 }
 
-h2{
+h2 {
     font-family: 'Alamak!' !important;
     font-family: 'MedievalSharp', cursive !important;
 
     text-align: center;
 }
 
-a{
+a {
     color: black;
 }
 
-.carousel-inner{
+.carousel-inner {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.home-pic{
-width: 100px;
+.home-pic {
+    width: 100px;
 }
 
-.foot-list{
+.foot-list {
     padding: 0px;
 }
 
-.carousel-inner{
+.carousel-inner {
     border: 5px solid black;
 
     border-radius: 7px;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
 
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 4 / 4;
+border: solid 2px;
+height: 200px;
+background: url(img/EldenRingVR_1.jpeg) ;
+background-size: 100%;
+margin-left: 25px;
+display: block;
+background-repeat: no-repeat;
+}
+.div2 { grid-area: 1 / 6 / 7 / 9; 
+border: solid 2px;
+height: 200px;
+background: url(img/Elden-Ring-dragons-disappear.png);
+background-size: 100%;
+display: block;
+margin-right: 25px;
+}
+.div3 { grid-area: 8 / 1 / 11 / 4; 
+border: solid 2px;
+background-size: 100%;
+display: block;
+height: 200px;
+margin-top: 30px;
+margin-left: 25px;
+background-image: url('img/calidelden-ring-decaying-ekzykes-720x720.jpg');
+background-size: 100%;
+}
+.div4 { grid-area: 8 / 6 / 11 / 9;
+    border: solid 2px;
+    background-size: 100%;
+    display: block;
+    height: 200px;
+    margin-top: 30px;
+  margin-right: 25px;
+  background: url(img/bridgedragon.jpg);
+  background-size: 100%;
+}
+.div5 { grid-area: 4 / 2 / 8 / 7; 
+border: solid black 2px;
+background-color: #007281;
+height: 250px;
+margin-left: 100px;
+margin-top: 25px;
+}
+
+.parentCon {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div7 { grid-area: 1 / 1 / 7 / 4; }
+
+
+    .div8 { grid-area: 1 / 4 / 7 / 7;
+    background-image: url(petpics/VolcanoManor-1024x576.png);
+    border: solid;
+    height: 500px;
+    }
+
+.pet-p{
+    z-index: 3;
+    color: aliceblue;
+}
+
+#textemail{
+    height: 500px;
+    width: 500px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    border: #6f989b solid 3px;
+  }
+
+.contact{
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(petpics/VolcanoManor-1024x576.png) 
+no-repeat center;
+}
+
+@media only screen and (max-width: 800px) {
+    .parentCon{
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    .div1{
+        background-position-x: 210px ;
+        position: relative;
+    }
+    .div2{
+        height: 450px;
+    }
+    
+    
+    .parentCon{
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
+    .div7{
+        margin-left: 20px;
+    }
+    .div8{
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 400px){
+	
+    .div1{
+        background-position-x: 210px ;
+        position: relative;
+    }
+    .div2{
+        height: 450px;
+    }
+   
+    .parentCon{
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
+    .div7{
+        margin-right: 800px;
+    }
+    .div8{
+        background-image: url(petpics/VolcanoManor-1024x576.png);
+        background-position-x:  1950px;
+        position: relative;
+    }
 }
