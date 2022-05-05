@@ -5,6 +5,10 @@
     margin-left: 253px;
     background-color: gold;
 } */
+html{
+    overflow-x: hidden;
+}
+
 header {
     background-color: #007281 !important;
 }
@@ -121,6 +125,7 @@ margin-top: 30px;
 margin-left: 25px;
 background-image: url('img/calidelden-ring-decaying-ekzykes-720x720.jpg');
 background-size: 100%;
+background-repeat: no-repeat;
 }
 .div4 { grid-area: 8 / 6 / 11 / 9;
     border: solid 2px;
@@ -131,6 +136,7 @@ background-size: 100%;
   margin-right: 25px;
   background: url(img/bridgedragon.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 .div5 { grid-area: 4 / 2 / 8 / 7; 
 border: solid black 2px;
@@ -138,6 +144,7 @@ background-color: #007281;
 height: 250px;
 margin-left: 100px;
 margin-top: 25px;
+background-repeat: no-repeat;
 }
 
 .parentCon {
@@ -167,6 +174,8 @@ margin-top: 25px;
     width: 500px;
 }
 
+
+
 .card:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
@@ -176,6 +185,13 @@ margin-top: 25px;
 .contact{
 background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(petpics/VolcanoManor-1024x576.png) 
 no-repeat center;
+}
+
+#market{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -189,11 +205,30 @@ no-repeat center;
 @media only screen and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
     .div1{
-        background-position-x: 210px ;
         position: relative;
+        height: 100px;
+        margin-bottom: 0px;
     }
     .div2{
-        height: 450px;
+        background-repeat: no-repeat;
+        height: 100px;
+        position: relative;
+        margin-bottom: 0px;
+    }
+    .div3{
+        background-repeat: no-repeat;
+        height: 100px;
+        position: relative;
+    }
+    .div4{
+        background-repeat: no-repeat;
+        height: 100px;
+        position: relative;
+    }
+
+    .div5{
+        height: 500px;
+        grid-area: 2 / 2 / 8 / 7;
     }
     
     
@@ -213,13 +248,39 @@ no-repeat center;
 @media only screen and (max-width: 400px){
 	
     .div1{
-        background-position-x: 210px ;
+        height: 50px;
         position: relative;
+        background-image: 75px;
     }
     .div2{
-        height: 450px;
+        height: 50px;
+        position: relative;
+        background-image: 200px;
     }
-   
+    .div3{
+        height: 50px;
+    }
+    .div4{
+        height: 50px;
+    }
+   .div5{
+       position: relative;
+       margin-right: 20px;
+       width: 200px;
+       max-height: 250px;
+       overflow: hidden;
+       -webkit-transition: max-height 0.7s;
+       -moz-transition: max-height .07s;
+       transition: 0.7s;
+
+   }
+   .div5.open{
+       max-height: 450px;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height .07s;
+    transition: 0.7s;
+   }
+
     .parentCon{
         display: block;
         width: 100%;
@@ -228,10 +289,13 @@ no-repeat center;
     }
     .div7{
         margin-right: 800px;
+        position: relative;
+
     }
     .div8{
         background-image: url(petpics/VolcanoManor-1024x576.png);
         background-position-x:  1950px;
         position: relative;
     }
+   
 }
