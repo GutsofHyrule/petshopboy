@@ -175,12 +175,12 @@ background-repeat: no-repeat;
 }
 
 
-
+/* 
 .card:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     border: #6f989b solid 3px;
-  }
+  } */
 
 .contact{
 background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(petpics/VolcanoManor-1024x576.png) 
@@ -253,6 +253,8 @@ no-repeat center;
         background-image: 75px;
     }
     .div2{
+        grid-area: 1 / 5 / 7 / 9;
+        margin-left: 30px;
         height: 50px;
         position: relative;
         background-image: 200px;
@@ -262,24 +264,36 @@ no-repeat center;
     }
     .div4{
         height: 50px;
+        margin-left: 30px;
+        grid-area: 8 / 5 / 11 / 9;
     }
-   .div5{
+    #aboutTxt{
        position: relative;
        margin-right: 20px;
        width: 200px;
        max-height: 250px;
        overflow: hidden;
+       
        -webkit-transition: max-height 0.7s;
        -moz-transition: max-height .07s;
        transition: 0.7s;
-
+       grid-area: 2 / 1 / 8 / 7;
    }
-   .div5.open{
-       max-height: 450px;
+   #aboutTxt.open{
+       max-height: 1000px;
     -webkit-transition: max-height 0.7s;
     -moz-transition: max-height .07s;
     transition: 0.7s;
    }
+  #showMore{
+      width: 80px;
+      margin-top: 5px;
+      color: aliceblue;
+      display: inline;
+      border: solid;
+      background-color: #6f989b;
+   grid-area: 7 / 4 / 8 / 6;
+  }
 
     .parentCon{
         display: block;

@@ -67,20 +67,42 @@ var shop = [
   },
   ]
   var postHTML = " "
+  
+ 
+
   for (var i=0; i < shop.length; i++){
       var wrapper = '<div class="card m-3" style="width: 18rem;" >'
       var heading = '<h5 class="card-title"> ' + shop[i].title + '</h5>'
       var image = ' <img class="card-img-top" src=' + shop[i].image + '>'
       var price = '<p> $' +  shop[i].price + '</p></span>'
       var description = '<div class="card-body"><p class="card-text">'+ shop[i].description + '</p><a href="#" class="btn btn-primary">Add to cart</a></div></div></div>'
-      var concatThis =  wrapper+ heading + image + price + description;
+      var concatThis =  wrapper + heading + image + price + description;
       postHTML = postHTML + concatThis
   }
   document.getElementById('market').innerHTML = postHTML
   function addId(){
-    var buttons = document.getElementsByClassName('btn');
+    var buttons = document.getElementsByClassName('btn'); 
     for(let i = 0; i < buttons.length; i++){
       buttons[i].id = 'modal' + i
     }
   };
   addId();
+
+  // about us text expand
+  var content =document.getElementById('aboutTxt');
+  var button =document.getElementById('showMore');
+  // about us
+  button.onclick = function(){
+
+    if ( content.className == 'open'){
+      // shirnk box
+      content.className = '';
+      button.innerHTML = 'Show More';
+
+    }else{
+      // expand box
+      content.className = 'open';
+      button.innerHTML = 'Show Less';
+    }
+    
+  };
