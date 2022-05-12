@@ -103,7 +103,7 @@ a {
 border: solid 2px;
 height: 200px;
 background: url(img/EldenRingVR_1.jpeg) ;
-background-size: 100%;
+background-size: cover;
 margin-left: 25px;
 display: block;
 background-repeat: no-repeat;
@@ -112,20 +112,20 @@ background-repeat: no-repeat;
 border: solid 2px;
 height: 200px;
 background: url(img/Elden-Ring-dragons-disappear.png);
-background-size: 100%;
+background-size: cover;
 display: block;
 margin-right: 25px;
 background-repeat: no-repeat;
 }
 .div3 { grid-area: 8 / 1 / 11 / 4; 
 border: solid 2px;
-background-size: 100%;
+background-size: cover;
 display: block;
 height: 200px;
 margin-top: 30px;
 margin-left: 25px;
 background-image: url('img/calidelden-ring-decaying-ekzykes-720x720.jpg');
-background-size: 100%;
+background-size: cover;
 background-repeat: no-repeat;
 }
 .div4 { grid-area: 8 / 6 / 11 / 9;
@@ -136,7 +136,7 @@ background-repeat: no-repeat;
     margin-top: 30px;
   margin-right: 25px;
   background: url(img/bridgedragon.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 
 }
@@ -152,20 +152,191 @@ background-repeat: no-repeat;
 .parentCon {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
     
-    .div7 { grid-area: 1 / 1 / 7 / 4; }
 
 
-    .div8 { grid-area: 1 / 4 / 7 / 7;
+    .div8 { grid-area: 1 / 2 / 2 / 7;
     background-image: url(petpics/VolcanoManor-1024x576.png);
     border: solid;
     height: 500px;
+    background-position-x: -270px ;
     }
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+    html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+      background-size: cover;
+      height:100%;
+    }
+    
+    #feedback-page{
+        text-align:center;
+    }
+    
+    #form-main{
+        width:100%;
+        float:left;
+        padding-top:0px;
+        
+    }
+    
+    #form-div {
+        grid-area: 1 / 1 / 2 / 4;
+        background-color:rgba(72,72,72,0.4);
+        padding-left:35px;
+        padding-right:35px;
+        padding-top:35px;
+        padding-bottom:20px;
+        margin-right: 20px;
+        width: 450px;
+        float: left;
+        left: 50%;
+        
+      margin-top:20px;
+        margin-left: 100px;
+      -moz-border-radius: 7px;
+      -webkit-border-radius: 7px;
+    }
+    
+    .feedback-input {
+        color:#3c3c3c;
+        font-family: Helvetica, Arial, sans-serif;
+      font-weight:500;
+        font-size: 18px;
+        border-radius: 0;
+        line-height: 22px;
+        background-color: #fbfbfb;
+        padding: 13px 13px 13px 54px;
+        margin-bottom: 10px;
+        width:100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+      border: 3px solid rgba(0,0,0,0);
+    }
+    
+    .feedback-input:focus{
+        background: #fff;
+        box-shadow: 0;
+        border: 3px solid #3498db;
+        color: #3498db;
+        outline: none;
+      padding: 13px 13px 13px 54px;
+    }
+    
+    .focused{
+        color:#30aed6;
+        border:#30aed6 solid 3px;
+    }
+    
+    /* Icons ---------------------------------- */
+    #name{
+        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    #name:focus{
+        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+        background-size: 30px 30px;
+        background-position: 8px 5px;
+      background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    #email{
+        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    #email:focus{
+        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+        background-size: 30px 30px;
+      background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    #comment{
+        background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 150px;
+        line-height: 150%;
+        resize:vertical;
+    }
+    
+    input:hover, textarea:hover,
+    input:focus, textarea:focus {
+        background-color:white;
+    }
+    
+    #button-blue{
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        float:left;
+        width: 100%;
+        border: #fbfbfb solid 4px;
+        cursor:pointer;
+        background-color: #3498db;
+        color:white;
+        font-size:24px;
+        padding-top:22px;
+        padding-bottom:22px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+      margin-top:-4px;
+      font-weight:700;
+    }
+    
+    #button-blue:hover{
+        background-color: rgba(0,0,0,0);
+        color: #0493bd;
+    }
+        
+    .submit:hover {
+        color: #3498db;
+    }
+        
+    .ease {
+        width: 0px;
+        height: 74px;
+        background-color: #fbfbfb;
+        -webkit-transition: .3s ease;
+        -moz-transition: .3s ease;
+        -o-transition: .3s ease;
+        -ms-transition: .3s ease;
+        transition: .3s ease;
+    }
+    
+    .submit:hover .ease{
+      width:100%;
+      background-color:white;
+    }
+    
+    @media only screen and (max-width: 580px) {
+        #form-div{
+            left: 3%;
+            margin-right: 3%;
+            width: 88%;
+            margin-left: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+            grid-area: 1 / 1 / 7 / 4;
+            
+        }
+    }
 .pet-p{
     z-index: 3;
     color: aliceblue;
@@ -184,10 +355,7 @@ background-repeat: no-repeat;
     border: #6f989b solid 3px;
   }
 
-.contact{
-background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(petpics/VolcanoManor-1024x576.png) 
-no-repeat center;
-}
+
 
 #market{
     display: flex;
@@ -203,13 +371,21 @@ no-repeat center;
 .modal-dialog{
     max-width: 350px !important;
 }
-
+@media  only screen and (max-width:900px) {
+    .div5 {
+        overflow-y: auto;
+    }
+}
 @media only screen and (max-width: 800px) {
     .parentCon{
         display: block;
         width: 100%;
         height: 100%;
 
+    }
+    #form-div{
+        grid-area: 1 / 1 / 7 / 4;
+        display: grid;
     }
 }
 @media only screen and (max-width: 600px){
@@ -256,6 +432,10 @@ no-repeat center;
     #showMore{
         display: none;
 
+    }
+    #form-div{
+        grid-area: 1 / 1 / 7 / 4;
+        display: grid;
     }
 }
 @media only screen and (max-width: 400px){
@@ -304,7 +484,6 @@ no-repeat center;
   #showMore{
       width: 80px;
       margin: 5px;
-      margin-right: ;
       color: aliceblue;
       display: inline;
       border: solid;
@@ -320,7 +499,7 @@ no-repeat center;
         height: 100%;
 
     }
-    .div7{
+    #form-main{
         margin-right: 800px;
         position: relative;
 
@@ -329,6 +508,7 @@ no-repeat center;
         background-image: url(petpics/VolcanoManor-1024x576.png);
         background-position-x:  1950px;
         position: relative;
+        display: none;
     }
    
 }
