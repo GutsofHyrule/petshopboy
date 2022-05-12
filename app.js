@@ -2,68 +2,68 @@ var shop = [
   {
     title: 'Agheel',
     image: './petpics/Agheel-1536x872.png',
-    price: '$7,500-15,000',
-    description: 'The Great Dragon Agheel dwells in the swamps of Limgrave. With its massive size, strength, and flaming breath, it can easily fell any who dare challenge it.'
+    price: '5,000',
+    description: ''
   },
   {
     title: 'Greyoll',
     image: './petpics/Greyoll-1536x873.png',
-    price: '$7,500-15,000',
-    description: 'A massive Dragon, suffering from the Scarlet Rot, and unable to fly. Her only means of protection are her children, which sleep nearby. She will awaken them with a mighty roar, signally them to defend their mother.'
+    price: '50,000',
+    description: ''
   },
   {
     title: 'Greyll',
     image: './petpics/Greyll-1536x873.png',
-    price: '$7,500-15,000',
-    description:'A large and powerful Great Dragon, found guarding a narrow bridge. Like its cousins, it will utilize stomps, breath attacks, bites to take down any who try to cross.'
+    price: '80,000',
+    description:''
   },
   {
     title: 'Placidusax',
     image: './petpics/Placidusax-1536x874.png',
-    price: '$7,500-15,000',
-    description:'The Lord of the doomed Farum Azula, stuck in time. Despite its battered appearance, he is a force to be reckoned with, wielding powerful Lightning attacks and often phasing in and out of reality to strike.'
+    price: '280,000',
+    description:''
   },
   {
     title: 'Ekzykes',
     image: './petpics/Ekzykes-1536x872.png',
-    price: '$7,500-15,000',
-    description:'A pale white dragon — its scales blighted by the same scarlet rot that plagues the region of Caelid. It silently waits along the southern highway, awaiting unsuspecting travelers to fall prey to its deathly onslaught.'
+    price: '38,000',
+    description:''
   },
   {
     title: 'Smarag',
     image: './petpics/Smarag-1536x872.png',
-    price: '$7,500-15,000',
-    description:'A fearsome Great Dragon that devoured countless sorcerers, eventually becoming corrupted by their glintstones. Capable of spewing magic breath and firing off devastating shards at any who dares to disturb it.'
+    price: '14,699',
+    description:''
   },
   {
     title: 'Adula',
     image: './petpics/Adula.1-1536x760.png',
-    price: '$7,500-15,000',
-    description:'A Great Dragon that serves Ranni the Witch, and will protect her from any intruders. It can summon its signature Moonblade to slice and can blast enemies away with homing crystals.'
+    price: '120,000',
+    description:''
   },
   {
     title: 'Borealis',
     image: './petpics/Borealis-1536x873.png',
-    price: '$7,500-15,000',
-    description:'A Great Dragon of frost, found atop the frozen lake on the Mountaintops. It appears suddenly after a blizzard, using its breath to freeze foes solid.'
+    price: '100,000',
+    description:''
   },
   {
     title: 'Makar',
     image: './petpics/Makar-1536x875.png',
-    price: '$7,500-15,000',
-    description:'Aggressive Fire Wyrm guarding the entrance to Altus Plains from any who attempt to bypass the lift.'
+    price: '18,000',
+    description:''
   },
   {
     title: 'Theodorix',
     image: './petpics/Theodorix-1536x872.png',
-    price: '$7,500-15,000',
-    description:'Once known as a great warrior, Theodorix has succumbed to the power of Dragon Communion, transforming into a malformed Wyrm. It is capable of using its sword, along with its magma breath on anything that dares to awaken it.'
+    price: '180,000',
+    description:''
   },
   {
     title: 'Lansseax',
     image: './petpics/Lansseax2-1536x872.png',
-    price: '83,000',
-    description:'One of the Ancient Dragons, who had sturdy stone scales and wielded powerful lightning, Lansseax is an extremely deadly foe. She attacks with a combination of fire breath, claw swipes, and her imposing Lightning Glaive.'
+    price: '60,000',
+    description:''
   },
   ]
   var postHTML = " "
@@ -75,34 +75,18 @@ var shop = [
       var heading = '<h5 class="card-title"> ' + shop[i].title + '</h5>'
       var image = ' <img class="card-img-top" src=' + shop[i].image + '>'
       var price = '<p> $' +  shop[i].price + '</p></span>'
-      var description = '<div class="card-body"><p class="card-text">'+ shop[i].description + '</p><a href="#" class="btn btn-primary">Add to cart</a></div></div></div>'
+      var description = '<div class="card-body"><p class="card-text">'+ shop[i].description + '</p><a href="#" class="btn btn-info">See more</a></div></div></div>'
       var concatThis =  wrapper + heading + image + price + description;
       postHTML = postHTML + concatThis
   }
   document.getElementById('market').innerHTML = postHTML
-  function addId(){
-    var buttons = document.getElementsByClassName('btn'); 
-    for(let i = 0; i < buttons.length; i++){
-      buttons[i].id = 'modal' + i
-    }
-  };
-  addId();
-
-  // about us text expand
-  var content =document.getElementById('aboutTxt');
-  var button =document.getElementById('showMore');
-  // about us
-  button.onclick = function(){
-
-    if ( content.className == 'open'){
-      // shirnk box
-      content.className = '';
-      button.innerHTML = 'Show More';
-
-    }else{
-      // expand box
-      content.className = 'open';
-      button.innerHTML = 'Show Less';
-    }
-    
-  };
+// setting data-toggle and target to open modals
+function addId(){
+  var buttons = document.getElementsByClassName('btn');
+  for(let i = 0; i < buttons.length; i++){
+    // buttons[i].id = 'modal' + i
+    buttons[i].setAttribute('data-toggle', 'modal')
+    buttons[i].setAttribute('data-target',  '#modal' + i)
+  }
+};
+addId();

@@ -1,61 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MedievalSharp&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pets</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MedievalSharp&family=UnifrakturCook:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
+
 <body>
-    <header id = 'header'>
-        <h1>THE PETSHOP BETWEEN</h1>
-        <nav class="navbar navbar-expand-lg p-0 m-0 navbar-light bg-warning" id="navbar">
-            <a class="navbar-brand m-0" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+  <header id='header'>
+    <h1>THE PETSHOP BETWEEN</h1>
+    <nav class="navbar navbar-expand-lg p-0 m-0 navbar-light bg-warning" id="navbar">
+      <a class="navbar-brand m-0" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-warning" id="navbarNavAltMarkup">
+        <div class="navbar-nav justify-content-center  container-fluid bg-warning " id="navbar">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="aboutUs.html">About</a>
+          <a class="nav-item nav-link" href="pets.html">Pets</a>
+          <a class="nav-item nav-link" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2 class="text-white mb-5 mt-3">Pets</h2>
+
+
+  </main>
+  <div id="market"></div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal0" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card m-3" style="width: 18rem;">
+            <h5 class="card-title"> Agheel</h5> <img class="card-img-top" src="./petpics/Agheel-1536x872.png">
+            <p> $5,000</p>
+            <div class="card-body">
+              <p class="card-text">The Great Dragon Agheel dwells in the swamps of Limgrave. With its massive size,
+                strength, and flaming breath, it can easily fell any who dare challenge it.</p><a href="#"
+                class="btn btn-info" data-toggle="modal" data-target="#modal0">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card m-3" style="width: 18rem;">
+            <h5 class="card-title"> Greyoll</h5> <img class="card-img-top" src="./petpics/Greyoll-1536x873.png">
+            <p> $50,000</p>
+            <div class="card-body">
+              <p class="card-text">A massive Dragon, suffering from the Scarlet Rot, and unable to fly. Her only means
+                of protection are her children, which sleep nearby. She will awaken them with a mighty roar, signally
+                them to defend their mother.</p><a href="#" class="btn btn-info">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card m-3" style="width: 18rem;">
+            <h5 class="card-title"> Greyll</h5> <img class="card-img-top" src="./petpics/Greyll-1536x873.png">
+            <p> $80,000</p>
+            <div class="card-body">
+              <p class="card-text">A large and powerful Great Dragon, found guarding a narrow bridge. Like its cousins,
+                it will utilize stomps, breath attacks, bites to take down any who try to cross.</p><a href="#"
+                class="btn btn-info" data-toggle="modal" data-target="#modal2">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card m-3" style="width: 18rem;">
+            <h5 class="card-title"> Placidusax</h5> <img class="card-img-top" src="./petpics/Placidusax-1536x874.png">
+            <p> $280,000</p>
+            <div class="card-body">
+              <p class="card-text">The Lord of the doomed Farum Azula, stuck in time. Despite its battered appearance,
+                he is a force to be reckoned with, wielding powerful Lightning attacks and often phasing in and out of
+                reality to strike.</p><a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal3">Add to
+                cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card m-3" style="width: 18rem;">
+            <h5 class="card-title"> Ekzykes</h5> <img class="card-img-top" src="./petpics/Ekzykes-1536x872.png">
+            <p> $38,000</p>
+            <div class="card-body">
+              <p class="card-text">A pale white dragon — its scales blighted by the same scarlet rot that plagues the
+                region of Caelid. It silently waits along the southern highway, awaiting unsuspecting travelers to fall
+                prey to its deathly onslaught.</p><a href="#" class="btn btn-info" data-toggle="modal"
+                data-target="#modal4">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card m-3" style="width: 18rem;">
+            <h5 class="card-title"> Smarag</h5> <img class="card-img-top" src="./petpics/Smarag-1536x872.png">
+            <p> $14,699</p>
+            <div class="card-body">
+              <p class="card-text">A fearsome Great Dragon that devoured countless sorcerers, eventually becoming
+                corrupted by their glintstones. Capable of spewing magic breath and firing off devastating shards at any
+                who dares to disturb it.</p><a href="#" class="btn btn-info" data-toggle="modal"
+                data-target="#modal5">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card m-3" style="width: 18rem;">
+            <h5 class="card-title"> Adula</h5> <img class="card-img-top" src="./petpics/Adula.1-1536x760.png">
+            <p> $120,000</p>
+            <div class="card-body">
+              <p class="card-text">A Great Dragon that serves Ranni the Witch, and will protect her from any intruders.
+                It can summon its signature Moonblade to slice and can blast enemies away with homing crystals.</p><a
+                href="#" class="btn btn-info" data-toggle="modal" data-target="#modal6">Add to cart</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card m-3" style="width: 18rem;">
+            <h5 class="card-title"> Borealis</h5> <img class="card-img-top" src="./petpics/Borealis-1536x873.png">
+            <p> $100,000</p>
+            <div class="card-body">
+              <p class="card-text">A Great Dragon of frost, found atop the frozen lake on the Mountaintops. It appears
+                suddenly after a blizzard, using its breath to freeze foes solid.</p><a href="#" class="btn btn-info"
+                data-toggle="modal" data-target="#modal7">Add to cart</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
             </button>
-            <div class="collapse navbar-collapse bg-warning" id="navbarNavAltMarkup">
-              <div class="navbar-nav justify-content-center  container-fluid bg-warning " id="navbar">
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="aboutUs.html">About</a>
-                <a class="nav-item nav-link" href="pets.html">Pets</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
+          </div>
+          <div class="modal-body">
+            <div class="card m-3" style="width: 18rem;">
+              <h5 class="card-title"> Makar</h5> <img class="card-img-top" src="./petpics/Makar-1536x875.png">
+              <p> $18,000</p>
+              <div class="card-body">
+                <p class="card-text">Aggressive Fire Wyrm guarding the entrance to Altus Plains from any who attempt to
+                  bypass the lift.</p><a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal8">Add to
+                  cart</a>
               </div>
             </div>
-          </nav>
-    </header>
-    <main>
-        <h2 class="text-white mb-5 mt-3">Pets</h2>
-      
-      
-    </main>
-    <div id="market"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card m-3" style="width: 18rem;">
+              <h5 class="card-title"> Theodorix</h5> <img class="card-img-top" src="./petpics/Theodorix-1536x872.png">
+              <p> $180,000</p>
+              <div class="card-body">
+                <p class="card-text">Once known as a great warrior, Theodorix has succumbed to the power of Dragon
+                  Communion, transforming into a malformed Wyrm. It is capable of using its sword, along with its magma
+                  breath on anything that dares to awaken it.</p><a href="#" class="btn btn-info" data-toggle="modal"
+                  data-target="#modal9">Add to cart</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card m-3" style="width: 18rem;">
+              <h5 class="card-title"> Theodorix</h5> <img class="card-img-top" src="./petpics/Theodorix-1536x872.png">
+              <p> $180,000</p>
+              <div class="card-body">
+                <p class="card-text">Once known as a great warrior, Theodorix has succumbed to the power of Dragon
+                  Communion, transforming into a malformed Wyrm. It is capable of using its sword, along with its magma
+                  breath on anything that dares to awaken it.</p><a href="#" class="btn btn-info" data-toggle="modal"
+                  data-target="#modal9">Add to cart</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card m-3" style="width: 18rem;">
+              <h5 class="card-title"> Lansseax</h5> <img class="card-img-top" src="./petpics/Lansseax2-1536x872.png">
+              <p> $60,000</p>
+              <div class="card-body">
+                <p class="card-text">One of the Ancient Dragons, who had sturdy stone scales and wielded powerful
+                  lightning, Lansseax is an extremely deadly foe. She attacks with a combination of fire breath, claw
+                  swipes, and her imposing Lightning Glaive.</p><a href="#" class="btn btn-info" data-toggle="modal"
+                  data-target="#modal10">Add to cart</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-
-    
 
 
     <footer>
-        <div class="flex-row footer mt-lg-5 d-inline-flex bd-highlight justify-content-center">         
-            <a href="index.html" class="text-dark"><p class="">- Home -</p></a>   
-            <a href="aboutUs.html" class="text-dark"><p>- About -</p></a>   
-          <a href="pets.html" class="text-dark"><p>- Pets -</p></a>   
-        <a href="contact.html" class="text-dark"><p>- Contact -</p></a>   
-        <a href="#header" class="text-dark"><p>- To top -</p></a>        
-        </div>
-        
+      <div class="flex-row footer mt-lg-5 d-inline-flex bd-highlight justify-content-center">
+        <a href="index.html" class="text-dark">
+          <p class="">- Home -</p>
+        </a>
+        <a href="aboutUs.html" class="text-dark">
+          <p>- About -</p>
+        </a>
+        <a href="pets.html" class="text-dark">
+          <p>- Pets -</p>
+        </a>
+        <a href="contact.html" class="text-dark">
+          <p>- Contact -</p>
+        </a>
+        <a href="#header" class="text-dark">
+          <p>- To top -</p>
+        </a>
+      </div>
+
     </footer>
-<img src="" alt="">
+    <img src="" alt="">
 </body>
 <script src="./app.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </html>

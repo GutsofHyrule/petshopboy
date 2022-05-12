@@ -115,6 +115,7 @@ background: url(img/Elden-Ring-dragons-disappear.png);
 background-size: 100%;
 display: block;
 margin-right: 25px;
+background-repeat: no-repeat;
 }
 .div3 { grid-area: 8 / 1 / 11 / 4; 
 border: solid 2px;
@@ -137,6 +138,7 @@ background-repeat: no-repeat;
   background: url(img/bridgedragon.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+
 }
 .div5 { grid-area: 4 / 2 / 8 / 7; 
 border: solid black 2px;
@@ -175,12 +177,12 @@ background-repeat: no-repeat;
 }
 
 
-/* 
+
 .card:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     border: #6f989b solid 3px;
-  } */
+  }
 
 .contact{
 background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(petpics/VolcanoManor-1024x576.png) 
@@ -194,6 +196,14 @@ no-repeat center;
     text-align: center;
 }
 
+#showMore{
+    display: none;
+}
+
+.modal-dialog{
+    max-width: 350px !important;
+}
+
 @media only screen and (max-width: 800px) {
     .parentCon{
         display: block;
@@ -205,14 +215,13 @@ no-repeat center;
 @media only screen and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
     .div1{
-        position: relative;
+        
         height: 100px;
         margin-bottom: 0px;
     }
     .div2{
         background-repeat: no-repeat;
         height: 100px;
-        position: relative;
         margin-bottom: 0px;
     }
     .div3{
@@ -244,6 +253,10 @@ no-repeat center;
     .div8{
         margin-left: 15px;
     }
+    #showMore{
+        display: none;
+
+    }
 }
 @media only screen and (max-width: 400px){
 	
@@ -264,7 +277,7 @@ no-repeat center;
     }
     .div4{
         height: 50px;
-        margin-left: 30px;
+        margin-left: 40px;
         grid-area: 8 / 5 / 11 / 9;
     }
     #aboutTxt{
@@ -280,19 +293,25 @@ no-repeat center;
        grid-area: 2 / 1 / 8 / 7;
    }
    #aboutTxt.open{
-       max-height: 1000px;
+       max-height: 3000px;
     -webkit-transition: max-height 0.7s;
     -moz-transition: max-height .07s;
     transition: 0.7s;
+    margin-right: 20px;
+    overflow-y: auto;
+    grid-area: 2 / 1 / 8 / 9;
    }
   #showMore{
       width: 80px;
-      margin-top: 5px;
+      margin: 5px;
+      margin-right: ;
       color: aliceblue;
       display: inline;
       border: solid;
+      text-align: center;
+      cursor: pointer;
       background-color: #6f989b;
-   grid-area: 7 / 4 / 8 / 6;
+   grid-area: 8 / 4 / 8 / 6;
   }
 
     .parentCon{
