@@ -371,6 +371,77 @@ background-repeat: no-repeat;
 .modal-dialog{
     max-width: 350px !important;
 }
+
+.shop-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+.cart-column{
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row{
+    display: flex;
+}
+.cart-item{
+    width: 45%;
+}
+.cart-price{
+    width: 20%;
+    font-size: 1.2em;
+}
+.cart-quantity{
+    width: 35%;
+}
+.cart-item-title{
+    color: #3c3c3c;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.card-item-image{
+    width: 75px;
+    height: auto;
+}
+.cart-quantity-button{
+    margin-bottom: 10px;
+}
+.cart-total{
+    text-align: end;
+    margin-top: 10px; 
+}
+.cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #365252;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+.cart-total-price{
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.btn-purchase{
+    display: block !important;
+    margin:  40px auto 80px auto !important;
+    font-size: 1.7em !important;
+}
 @media  only screen and (max-width:900px) {
     .div5 {
         overflow-y: auto;
