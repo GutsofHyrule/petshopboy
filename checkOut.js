@@ -20,15 +20,16 @@ function ready() {
         button.addEventListener('click', addToCartClicked)
     }
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchasedClicked)
-    
+}  
     function purchasedClicked() {
         alert('thank you')
-        var cartItems = document.getElementsByClassName('cart-Items')[0]
+        var cartItems = document.getElementsByClassName('cart-items')[0]
         while (cartItems.hasChildNodes()){
             cartItems.removeChild(cartItems.firstChild)
         }
+        updateCartTotal()
     }
-}
+
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
@@ -44,8 +45,8 @@ function quantityChange(event) {
 function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
-    var title = shopItem.getElementsByClassName('card-title')[0].innerText
-    var price = shopItem.getElementsByClassName('price')[0].innerText
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('shop-item-img')[0].src
     console.log(title, price, imageSrc);
     addItemToCart(title, price, imageSrc)
@@ -55,7 +56,7 @@ function addItemToCart(title, price, imageSrc) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
-    var cartItemNames= cartItems.getElementsByClassName('card-item-title')
+    var cartItemNames= cartItems.getElementsByClassName('cart-item-title')
     for(var i = 0; i < cartItemNames.length; i++){
         if(cartItemNames[i].innerText == title){
             alert('This item is already in your cart')
@@ -65,8 +66,8 @@ function addItemToCart(title, price, imageSrc) {
     var cartRowContents = `
     <div class="cart-item cart-column">
     <img class="cart-item-image"src="${imageSrc}" width = "100" height='100' alt="">
-  </div>
     <span class="cart-item-title">${title}</span>
+    </div>
     <span class="cart-price cart-column">${price}
     </span>
     <div class="cart-quantity cart-column">
@@ -80,7 +81,7 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChange)
 }
 function updateCartTotal() {
-    var cartItemContainer = document.getElementsByClassName('cart-item')[0]
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
     var total = 0
     for (var i = 0; i < cartRows.length; i++) {

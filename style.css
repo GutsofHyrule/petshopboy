@@ -1,10 +1,6 @@
-/* #navbar{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-left: 253px;
-    background-color: gold;
-} */
+ #navbar{
+    box-shadow: 0px 7px 10px black;
+} 
 html{
     overflow-x: hidden;
 }
@@ -15,6 +11,7 @@ header {
 
 body {
     background-color: #365252 !important;
+    font-family: 'MedievalSharp', cursive !important;
 }
 
 a {
@@ -81,7 +78,9 @@ a {
 .foot-list {
     padding: 0px;
 }
-
+.carousel{
+    box-shadow: 5px 5px 10px black;
+}
 .carousel-inner {
     border: 5px solid black;
 
@@ -107,6 +106,7 @@ background-size: cover;
 margin-left: 25px;
 display: block;
 background-repeat: no-repeat;
+box-shadow: 5px 5px 10px black;
 }
 .div2 { grid-area: 1 / 6 / 7 / 9; 
 border: solid 2px;
@@ -116,6 +116,7 @@ background-size: cover;
 display: block;
 margin-right: 25px;
 background-repeat: no-repeat;
+box-shadow: 5px 5px 10px black;
 }
 .div3 { grid-area: 8 / 1 / 11 / 4; 
 border: solid 2px;
@@ -127,6 +128,7 @@ margin-left: 25px;
 background-image: url('img/calidelden-ring-decaying-ekzykes-720x720.jpg');
 background-size: cover;
 background-repeat: no-repeat;
+box-shadow: 5px 5px 10px black;
 }
 .div4 { grid-area: 8 / 6 / 11 / 9;
     border: solid 2px;
@@ -138,7 +140,7 @@ background-repeat: no-repeat;
   background: url(img/bridgedragon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
+  box-shadow: 5px 5px 10px black;
 }
 .div5 { grid-area: 4 / 2 / 8 / 7; 
 border: solid black 2px;
@@ -147,6 +149,7 @@ height: 250px;
 margin-left: 100px;
 margin-top: 25px;
 background-repeat: no-repeat;
+box-shadow: 5px 5px 10px black;
 }
 
 .parentCon {
@@ -164,6 +167,7 @@ background-repeat: no-repeat;
     border: solid;
     height: 500px;
     background-position-x: -270px ;
+    box-shadow: 5px 5px 10px black;
     }
     @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
@@ -180,12 +184,12 @@ background-repeat: no-repeat;
         width:100%;
         float:left;
         padding-top:0px;
-        
+       
     }
     
     #form-div {
         grid-area: 1 / 1 / 2 / 4;
-        background-color:rgba(72,72,72,0.4);
+        background-color:rgba(51, 50, 50, 0.4);
         padding-left:35px;
         padding-right:35px;
         padding-top:35px;
@@ -194,13 +198,17 @@ background-repeat: no-repeat;
         width: 450px;
         float: left;
         left: 50%;
-        
+        box-shadow: 5px 5px 10px black;
       margin-top:20px;
         margin-left: 100px;
       -moz-border-radius: 7px;
       -webkit-border-radius: 7px;
     }
-    
+    .card {
+        border: solid #3c3c3c 2px !important;
+  
+        box-shadow: 5px 5px 10px black !important;
+    }
     .feedback-input {
         color:#3c3c3c;
         font-family: Helvetica, Arial, sans-serif;
@@ -231,6 +239,9 @@ background-repeat: no-repeat;
     .focused{
         color:#30aed6;
         border:#30aed6 solid 3px;
+    }
+    .contact{
+        margin-top: 10px;
     }
     
     /* Icons ---------------------------------- */
@@ -373,6 +384,10 @@ background-repeat: no-repeat;
 }
 
 .shop-item{
+    margin: 30px;
+}
+
+.shop-items{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -384,6 +399,8 @@ background-repeat: no-repeat;
 
 }
 .cart-column{
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid black;
     margin-right: 1.5em;
     padding-bottom: 10px;
@@ -403,20 +420,23 @@ background-repeat: no-repeat;
     width: 35%;
 }
 .cart-item-title{
-    color: #3c3c3c;
+    
     margin-left: .5em;
     font-size: 1.2em;
+
 }
-.card-item-image{
+.cart-item-image{
     width: 75px;
     height: auto;
 }
 .cart-quantity-button{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  
 }
 .cart-total{
     text-align: end;
     margin-top: 10px; 
+    margin-right: 10px;
 }
 .cart-quantity-input{
     height: 34px;
@@ -426,6 +446,7 @@ background-repeat: no-repeat;
     padding: 0;
     text-align: center;
     font-size: 1.2em;
+    margin-right: 25px;
 }
 .cart-total-price{
     font-size: 1.1em;
@@ -437,6 +458,13 @@ background-repeat: no-repeat;
     color: black;
     margin-right: 20px;
 }
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
 .btn-purchase{
     display: block !important;
     margin:  40px auto 80px auto !important;
